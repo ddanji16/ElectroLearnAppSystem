@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_option_default"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tv_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/5"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:progress="20"
+            android:max="100"/>
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25s"
+            android:background="#FF5722"
+            android:textColor="#FFF"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_option_default"
+        android:padding="24dp"
+        android:text="Question text goes here?"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_option_default"
+        android:padding="16dp"
+        android:text="Option A"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/tv_option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_option_default"
+        android:padding="16dp"
+        android:text="Option B"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/tv_option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_option_default"
+        android:padding="16dp"
+        android:text="Option C"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/tv_option4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_option_default"
+        android:padding="16dp"
+        android:text="Option D"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_vertical"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT QUESTION"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFF"/>
+
+</LinearLayout>

@@ -30,4 +30,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), LoginActivity.class));
         finish();
     }
+    public void quiz(android.view.View view) {
+        startActivity(new Intent(MainActivity.this, QuizActivity.class));
+    }
 }

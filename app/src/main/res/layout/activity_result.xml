@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#6200EE"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/img_medal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations!"
+        android:textColor="#FFF"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solid performance! You are getting better!"
+        android:textColor="#E0E0E0"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp">
+
+            <TextView
+                android:id="@+id/tv_score_fraction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4/5"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Score"
+                android:textColor="#757575"/>
+
+            <ProgressBar
+                android:id="@+id/result_progress"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/circular_progress"
+                android:max="100"
+                android:progress="80"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRY AGAIN"
+        android:backgroundTint="#FFF"
+        android:textColor="#6200EE"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>
