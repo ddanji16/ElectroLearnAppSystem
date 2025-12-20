@@ -56,18 +56,16 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         opt3.setOnClickListener(this);
         opt4.setOnClickListener(this);
 
+        // inside onCreate...
         btnNext.setOnClickListener(v -> {
             if (selectedAnswer.isEmpty()) {
                 Toast.makeText(this, "Please select an answer", Toast.LENGTH_SHORT).show();
                 return;
             }
             checkAnswer();
-            currentQuestionIndex++;
-            if (currentQuestionIndex < questionsList.size()) {
-                loadQuestion();
-            } else {
-                finishQuiz();
-            }
+
+            // Use the helper method instead of writing the logic twice
+            goToNextQuestion();
         });
 
         loadQuestion();
@@ -98,15 +96,25 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         if (timer != null) timer.cancel();
 
         // 25 seconds per question
-        timer = new CountDownTimer(25000, 1000) {
+        timer = new CountDownTimer(10000, 1000) {
             public void onTick(long millisUntilFinished) {
                 tvTimer.setText(millisUntilFinished / 1000 + "s");
             }
 
             public void onFinish() {
-                // Time up logic: Auto-move or mark wrong
+                tvTimer.setText("0s");
                 Toast.makeText(QuizActivity.this, "Time's up!", Toast.LENGTH_SHORT).show();
-                // Optionally move to next question automatically here
+
+                // 1. Lock buttons so user can't click anymore
+                setOptionsClickable(false);
+
+                // 2. Show the correct answer visually
+                showCorrectAnswer();
+
+                // 3. Wait 1.5 seconds, then go to next question automatically
+                new android.os.Handler().postDelayed(() -> {
+                    goToNextQuestion();
+                }, 1500);
             }
         }.start();
     }
@@ -146,5 +154,44 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
     public void backtbtn(android.view.View view) {
         startActivity(new Intent(QuizActivity.this, MainActivity.class));
+    }
+    // --- NEW METHODS TO ADD ---
+
+    private void showCorrectAnswer() {
+        // Get the correct answer text
+        QuestionModel q = questionsList.get(currentQuestionIndex);
+        String answer = q.getAnswer();
+
+        // Check which option matches the answer and turn it Green
+        // Note: If you don't have a drawable for correct, we use Color.GREEN
+        if (opt1.getText().toString().equals(answer)) {
+            opt1.setBackgroundColor(Color.GREEN);
+        } else if (opt2.getText().toString().equals(answer)) {
+            opt2.setBackgroundColor(Color.GREEN);
+        } else if (opt3.getText().toString().equals(answer)) {
+            opt3.setBackgroundColor(Color.GREEN);
+        } else if (opt4.getText().toString().equals(answer)) {
+            opt4.setBackgroundColor(Color.GREEN);
+        }
+    }
+
+    private void setOptionsClickable(boolean clickable) {
+        // Helper to lock/unlock buttons
+        opt1.setClickable(clickable);
+        opt2.setClickable(clickable);
+        opt3.setClickable(clickable);
+        opt4.setClickable(clickable);
+        btnNext.setClickable(clickable);
+    }
+
+    private void goToNextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questionsList.size()) {
+            loadQuestion();
+        } else {
+            finishQuiz();
+        }
+        // Re-enable clicks for the new question
+        setOptionsClickable(true);
     }
 }

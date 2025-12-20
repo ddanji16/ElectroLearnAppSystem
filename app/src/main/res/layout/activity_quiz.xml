@@ -13,6 +13,7 @@
         android:gravity="center_vertical"
         android:background="@drawable/bg_option_default"
         android:padding="12dp"
+        android:layout_marginTop="20sp"
         android:layout_marginBottom="24dp">
 
         <TextView
@@ -37,7 +38,7 @@
             android:id="@+id/tv_timer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="25s"
+            android:text="10s"
             android:background="#FF5722"
             android:textColor="#FFF"
             android:paddingHorizontal="12dp"
