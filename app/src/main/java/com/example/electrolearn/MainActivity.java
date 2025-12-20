@@ -33,4 +33,7 @@ public class MainActivity extends AppCompatActivity {
     public void quiz(android.view.View view) {
         startActivity(new Intent(MainActivity.this, QuizActivity.class));
     }
+    public void electronics(android.view.View view) {
+        startActivity(new Intent(MainActivity.this, Electronics.class));
+    }
 }

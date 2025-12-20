@@ -8,25 +8,41 @@
     android:id="@+id/main"
     tools:context=".MainActivity">
 
+
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
 
+
+
         <!-- App Header -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp"
-            android:background="#730924"
+            android:padding="25dp"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/red"
             android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:onClick="backtohome"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow_back"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="What is Electronics?"
+                android:layout_marginTop="-28dp"
+                android:layout_gravity="center"
                 android:textColor="@android:color/white"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -34,6 +50,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Meaning, Puropose and Uses of Electronics"
                 android:textColor="#E3F2FD"
                 android:textSize="14sp"
@@ -55,22 +72,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="26dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What is Electronics?"
+                    android:text="Electronics"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Meaning, Puropose and Uses of Electronics"
-                    android:textSize="14sp"
+                    android:text="   Electronics
+is the branch of science and engineering dealing with
+the theory and use of a class of devices in which electrons are
+transported through a vacuum, gas, or semiconductor .
+It is also deals with electrical circuits that involve active electrical
+components such as vacuum tubes, transistors, diodes and
+integrated circuits, and associated passive electrical
+components and interconnection technologies"
+                    android:textSize="15sp"
                     android:textColor="#555555"
-                    android:layout_marginTop="4dp" />
+                    android:layout_marginTop="4dp"
+                    android:justificationMode="inter_word"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

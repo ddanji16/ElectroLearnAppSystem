@@ -1,5 +1,6 @@
 package com.example.electrolearn;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -20,5 +21,8 @@ public class Electronics extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void backtohome(android.view.View view) {
+        startActivity(new Intent(Electronics.this, MainActivity.class));
     }
 }
