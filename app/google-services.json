@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "742288382550",
+    "project_id": "electrolearnapp",
+    "storage_bucket": "electrolearnapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742288382550:android:a89c1dd888cf8f130779f7",
+        "android_client_info": {
+          "package_name": "com.example.electrolearn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm_CZ7GsfpU5re7WNbReLm-Rht1-MIUic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
