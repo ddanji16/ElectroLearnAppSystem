@@ -30,4 +30,7 @@ public class ResultActivity extends AppCompatActivity {
             finish();
         });
     }
+    public void backtbtn1(android.view.View view) {
+        startActivity(new Intent(ResultActivity.this, MainActivity.class));
+    }
 }

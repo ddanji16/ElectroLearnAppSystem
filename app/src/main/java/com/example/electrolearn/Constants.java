@@ -37,6 +37,30 @@ public class Constants {
                 "Diode"
         ));
 
+
+        //copy paste it and paste to add new questions haha
+
+        list.add(new QuestionModel(
+                "What is the primary function of a transformer?",
+                "To change DC to AC",
+                "To increase or decrease AC voltage",
+                "To store energy",
+                "To stop current flow",
+                "To increase or decrease AC voltage"
+        ));
+
+        // ADDING QUESTION #7
+        list.add(new QuestionModel(
+                "Which of these is an active component?",
+                "Resistor",
+                "Capacitor",
+                "Inductor",
+                "Transistor",
+                "Transistor"
+        ));
+
+
+
         return list;
     }
 }

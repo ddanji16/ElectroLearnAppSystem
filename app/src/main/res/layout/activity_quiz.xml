@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F5F5"
+    android:background="@drawable/background"
     android:padding="16dp">
 
     <LinearLayout
@@ -111,5 +111,13 @@
         android:text="NEXT QUESTION"
         android:backgroundTint="#6200EE"
         android:textColor="#FFF"/>
+    <Button
+        android:onClick="backtbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GO BACK TO HOMEPAGE"
+        android:backgroundTint="#8E0035"
+        android:textColor="#FFF"
+        android:layout_marginBottom="30dp"/>
 
 </LinearLayout>

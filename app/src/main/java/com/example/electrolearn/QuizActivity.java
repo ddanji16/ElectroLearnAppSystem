@@ -143,4 +143,8 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
         finish();
     }
+
+    public void backtbtn(android.view.View view) {
+        startActivity(new Intent(QuizActivity.this, MainActivity.class));
+    }
 }

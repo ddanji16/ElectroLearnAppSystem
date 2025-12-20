@@ -20,13 +20,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="20dp"
-            android:background="#1E88E5"
+            android:background="#730924"
             android:layout_marginBottom="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Electronics Fundamentals"
+                android:text="What is Electronics?"
                 android:textColor="@android:color/white"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -34,7 +34,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Learn components, circuits, and tools"
+                android:text="Meaning, Puropose and Uses of Electronics"
                 android:textColor="#E3F2FD"
                 android:textSize="14sp"
                 android:layout_marginTop="4dp" />
@@ -259,54 +259,10 @@
 
 
 
-        <!-- Quiz -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="6dp"
-            android:onClick="quiz">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="QUIZ - TEST YOUR KNOWLEDGE"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="30 Questions - Choose the correct answer"
-                    android:textSize="14sp"
-                    android:textColor="#555555"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
 
 
 
 
-
-        <!-- Logout Button -->
-        <Button
-            android:id="@+id/logout_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Log Out"
-            android:onClick="logout"
-            android:layout_marginTop="24dp"
-            android:padding="14dp"
-            android:textSize="16sp"
-            android:textColor="@android:color/white"
-            app:backgroundTint="#E53935" />
 
     </LinearLayout>
 </ScrollView>
