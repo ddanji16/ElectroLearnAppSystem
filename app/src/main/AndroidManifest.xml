@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectroLearn">
         <activity
+            android:name=".components"
+            android:exported="false" />
+        <activity
             android:name=".Electronics"
             android:exported="false" />
         <activity
