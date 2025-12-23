@@ -36,4 +36,7 @@ public class MainActivity extends AppCompatActivity {
     public void electronics(android.view.View view) {
         startActivity(new Intent(MainActivity.this, Electronics.class));
     }
+    public void components(android.view.View view) {
+        startActivity(new Intent(MainActivity.this, components.class));
+    }
 }

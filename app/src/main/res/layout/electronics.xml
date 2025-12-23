@@ -122,16 +122,19 @@ components and interconnection technologies"
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Electronics Components"
+                    android:text="Electronics Purpose "
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Diodes, Resistors, Transistors, Switch etc."
+                    android:text="   Electronics allows us to design devices and systems that can sense their environment, make decisions, and perform specific tasks automatically.
+In practical terms, electronics is used to solve real-world problems and make life easier—from basic functions like lighting and communication to advanced applications such as computers, smartphones, medical equipment, automation, and Internet of Things (IoT) systems. By using electronic components like resistors, sensors, microcontrollers, and integrated circuits, electronics enables innovation, improves productivity, and supports modern technology in education, industry, healthcare, and daily life.
+If you want, I can also shorten this into one sentence or simplify it for an app description or school"
                     android:textSize="14sp"
                     android:textColor="#555555"
+                    android:justificationMode="inter_word"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -159,84 +162,15 @@ components and interconnection technologies"
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Parallel and Series Circuits"
+                    android:text="Uses Of Electronics"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What is a Parallel Circuit and Series Circuit?"
-                    android:textSize="14sp"
-                    android:textColor="#555555"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-
-
-        <!-- Card4 -->
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="6dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Types of Electronics Circuits"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Closed, Short and Open Circuits"
-                    android:textSize="14sp"
-                    android:textColor="#555555"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-
-
-
-
-        <!-- Card5 -->
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="6dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Analog and Digital Signals "
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Two Types of Signals - Analog and Digital"
+                    android:text="1. Communication – Used in mobile phones, radios, televisions, and the internet to send and receive information.
+"
                     android:textSize="14sp"
                     android:textColor="#555555"
                     android:layout_marginTop="4dp" />
@@ -248,37 +182,17 @@ components and interconnection technologies"
 
 
 
-        <!-- Card 6 -->
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="6dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="🌐 Internet of Things (IoT)"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sensors, Arduino, ESP32, and cloud integration"
-                    android:textSize="14sp"
-                    android:textColor="#555555"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
 
 
 
